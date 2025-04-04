@@ -41,15 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CitaVeterinariaRepositoryList.cs" />
-    <Compile Include="ICitaVeterinariaRepository.cs" />
-    <Compile Include="IMascotaRepository.cs" />
-    <Compile Include="IPropietarioRepository.cs" />
-    <Compile Include="IVeterinarioRepository.cs" />
-    <Compile Include="MascotaRepositoryList.cs" />
+    <Compile Include="EspecieRepository.cs" />
+    <Compile Include="FileRepository.cs" />
+    <Compile Include="MascotaRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PropietarioRepositoryList.cs" />
-    <Compile Include="VeterinarioRepositoryList.cs" />
+    <Compile Include="PropietarioRepository.cs" />
+    <Compile Include="RazaRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{442b8286-85aa-4c76-a8a6-f8e530feddb4}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

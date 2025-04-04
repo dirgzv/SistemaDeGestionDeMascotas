@@ -49,5 +49,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="BLL\BLL.csproj">
+      <Project>{d0ed72be-cfa5-4f5f-a2fc-55754d17a457}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="Entity\Entity.csproj">
+      <Project>{442b8286-85aa-4c76-a8a6-f8e530feddb4}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -15,6 +15,8 @@ namespace Entity
         protected string direccion { get; set; }
         protected string telefono { get; set; }
         protected string email { get; set; }
+
+       
     }
 
 }

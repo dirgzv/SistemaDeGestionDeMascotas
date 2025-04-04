@@ -30,5 +30,10 @@ namespace Entity
             this.raza = raza;
             this.propietario = propietario;
         }
+
+        public void AsignarPropietario(Propietario prop)
+        {
+            this.propietario = prop;
+        }
     }
 }

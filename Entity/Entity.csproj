@@ -43,7 +43,6 @@
   <ItemGroup>
     <Compile Include="CitaVeterinaria.cs" />
     <Compile Include="Especie.cs" />
-    <Compile Include="HistorialCitaVeterinaria.cs" />
     <Compile Include="Mascota.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

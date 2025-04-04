@@ -8,17 +8,25 @@ namespace Entity
 {
     public class Raza
     {
-        int idRaza { get; set; }
-        string nombre { get; set; }
-        string descripcion { get; set; }
-        Especie especie { get; set; }
+        public int idRaza { get; set; }
+        public string nombre { get; set; }
+        public Especie especie { get; private set; }
         public Raza() { }
-        public Raza(int idRaza, string nombre, string descripcion, Especie especie)
+        public Raza(int idRaza, string nombre, Especie especie)
         {
             this.idRaza = idRaza;
             this.nombre = nombre;
-            this.descripcion = descripcion;
             this.especie = especie;
+        }
+
+        public void AsignarEspecie(Especie especie)
+        {
+            this.especie = especie;
+        }
+
+        public override string ToString()
+        {
+            return $"{idRaza};{nombre};{especie.idEspecie}";
         }
     }
 }

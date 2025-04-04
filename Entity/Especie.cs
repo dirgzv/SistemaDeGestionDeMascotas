@@ -8,18 +8,21 @@ namespace Entity
 {
     public class Especie
     {
-        int idEspecie { get; set; }
-        string nombre { get; set; }
-        string descripcion { get; set; }
+        public int idEspecie { get; set; }
+        public string nombre { get; set; }
         List<Raza> razas { get; set; }
 
         public Especie() { }
-        public Especie(int idEspecie, string nombre, string descripcion, List<Raza> razas)
+        public Especie(int idEspecie, string nombre, List<Raza> razas)
         {
             this.idEspecie = idEspecie;
             this.nombre = nombre;
-            this.descripcion = descripcion;
             this.razas = razas;
+        }
+
+        public override string ToString()
+        {
+            return $"{idEspecie};{nombre};{string.Join("-",razas.Select(raza=>raza.nombre))}";
         }
     }
 }
